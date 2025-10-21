@@ -1,0 +1,35 @@
+{
+  "name": "hr-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && tsc",
+    "start": "node dist/server.js",
+    "dev": "ts-node src/server.ts",
+    "lint": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/cookie-parser": "^1.4.9",
+    "@types/express": "^5.0.3",
+    "@types/joi": "^17.2.3",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/multer": "^2.0.0",
+    "@types/pdfkit": "^0.17.3",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "fs": "^0.0.1-security",
+    "mongoose": "^8.18.3",
+    "pdfkit": "^0.17.2"
+  }
+}
