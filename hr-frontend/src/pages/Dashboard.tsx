@@ -21,7 +21,7 @@ export default function Dashboard() {
 
   const pendingLeaves = leaves.filter(leave => leave.status === 'pending').length || 0
   const todayPresent = attendance.filter(record => record.status === 'present' || record.status === 'late').length || 0
-  const pendingPayroll = payroll.filter(record => record.status === 'pending').length; || 0
+  const pendingPayroll = payroll.filter(record => record.status === 'pending').length || 0
 
   return (
     <div className="min-h-screen bg-background">
